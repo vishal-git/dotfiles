@@ -9,6 +9,7 @@ alias gs='git status'
 # misc
 alias mv='mv -i'
 alias up='cd ..'
+cdd() { cd "$@" && ls; }
 
 # windows home
 export wr=~/../../mnt/c/Users/visha
