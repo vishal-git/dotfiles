@@ -8,7 +8,7 @@ alias gs='git status'
 
 # misc
 alias mv='mv -i'
-alias up='cd ..'
+alias ..='cd ..'
 cdd() { cd "$@" && ls; }
 
 # windows home
@@ -19,6 +19,9 @@ alias cdcl='cd "$cl"'
 
 # misc
 alias ex='explorer.exe'
+
+# git command mapping for dotfiles repo
+alias config='/usr/bin/git --git-dir=/home/vishal/.cfg/ --work-tree=/home/vishal'
 
 # jupyter notebook
 alias jup='jupyter notebook --no-browser'

@@ -142,4 +142,3 @@ nbconv() {
 	fi
 	
 }
-alias config='/usr/bin/git --git-dir=/home/vishal/.cfg/ --work-tree=/home/vishal'
