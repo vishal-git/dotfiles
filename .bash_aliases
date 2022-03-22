@@ -27,3 +27,4 @@ alias config='/usr/bin/git --git-dir=/home/vishal/.cfg/ --work-tree=/home/vishal
 # jupyter notebook
 alias jup='jupyter notebook --no-browser'
 alias jupc='jupyter nbconvert --to slides --SlidesExporter.reveal_scroll=True'
+alias jupmono='jt -t monokai -f fira -fs 10 -nf ptsans -nfs 11 -N -kl -cursw 2 -cursc r -cellw 95% -T'
