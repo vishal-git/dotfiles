@@ -16,18 +16,20 @@ call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
+Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin' " NerdTree Git 
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'https://github.com/jiangmiao/auto-pairs' " Insert or delete brackets etc in pair
 Plug 'https://github.com/preservim/nerdcommenter' " For commenting
 Plug 'mhinz/vim-startify' " Startify
 Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
+"Plug 'ryanoasis/vim-devicons' " vim dev icons
 
 call plug#end()
 
 " NERDTree
-nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTreeToggle<CR>
-let NERDTreeQuitOnOpen=1
+nnoremap <leader>f :NERDTreeFocus<CR>
+nnoremap <leader>F :NERDTreeToggle<CR>
+let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeMinimalUI=1
 
 " NERDCommenter
@@ -37,3 +39,6 @@ nnoremap <C-_> <Plug>NERDCommenterToggle
 nmap <leader>1 :bp<CR>
 nmap <leader>2 :bn<CR>
 
+" Python
+nnoremap <C-r> :sp <CR> :term python % <CR>
+nnoremap <C-w> :bd! <CR>
