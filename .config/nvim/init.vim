@@ -22,7 +22,7 @@ Plug 'https://github.com/jiangmiao/auto-pairs' " Insert or delete brackets etc i
 Plug 'https://github.com/preservim/nerdcommenter' " For commenting
 Plug 'mhinz/vim-startify' " Startify
 Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
-"Plug 'ryanoasis/vim-devicons' " vim dev icons
+Plug 'ryanoasis/vim-devicons' " vim dev icons
 
 call plug#end()
 
