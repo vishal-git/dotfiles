@@ -29,6 +29,7 @@ Plug 'https://github.com/preservim/nerdcommenter' " For commenting
 Plug 'mhinz/vim-startify' " Startify
 Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
 Plug 'ryanoasis/vim-devicons' " vim dev icons
+Plug 'gruvbox-community/gruvbox'
 
 call plug#end()
 
@@ -48,3 +49,5 @@ nmap <leader>2 :bn<CR>
 " Python
 nnoremap <leader><r> :sp <CR> :term python % <CR>
 nnoremap <leader><w> :bd! <CR>
+
+colorscheme gruvbox
