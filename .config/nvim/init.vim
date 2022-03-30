@@ -10,6 +10,12 @@
 : set backspace=indent,eol,start
 : set encoding=utf-8
 : syntax enable
+
+set incsearch
+set nohlsearch
+set ignorecase
+set smartcase
+
 let g:python3_host_prog = '/home/vishal/anaconda3/bin/python'
 
 call plug#begin()
@@ -40,5 +46,5 @@ nmap <leader>1 :bp<CR>
 nmap <leader>2 :bn<CR>
 
 " Python
-nnoremap <C-r> :sp <CR> :term python % <CR>
-nnoremap <C-w> :bd! <CR>
+nnoremap <leader><r> :sp <CR> :term python % <CR>
+nnoremap <leader><w> :bd! <CR>
