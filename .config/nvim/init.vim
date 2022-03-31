@@ -15,6 +15,7 @@ set incsearch
 set nohlsearch
 set ignorecase
 set smartcase
+set termguicolors
 
 let g:python3_host_prog = '/home/vishal/anaconda3/bin/python'
 
