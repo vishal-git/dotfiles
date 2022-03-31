@@ -30,7 +30,7 @@ Plug 'mhinz/vim-startify' " Startify
 Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
 Plug 'ryanoasis/vim-devicons' " vim dev icons
 Plug 'gruvbox-community/gruvbox' " color scheme
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive' " git fugitive
 
 call plug#end()
 
