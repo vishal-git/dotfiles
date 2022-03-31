@@ -20,16 +20,17 @@ let g:python3_host_prog = '/home/vishal/anaconda3/bin/python'
 
 call plug#begin()
 
-Plug 'https://github.com/vim-airline/vim-airline' " Status bar
-Plug 'https://github.com/preservim/nerdtree' " NerdTree
-Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin' " NerdTree Git 
-Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
-Plug 'https://github.com/jiangmiao/auto-pairs' " Insert or delete brackets etc in pair
-Plug 'https://github.com/preservim/nerdcommenter' " For commenting
+Plug 'vim-airline/vim-airline' " Status bar
+Plug 'preservim/nerdtree' " NerdTree
+Plug 'Xuyuanp/nerdtree-git-plugin' " NerdTree Git 
+Plug 'tpope/vim-surround' " Surrounding ysw)
+Plug 'jiangmiao/auto-pairs' " Insert or delete brackets etc in pair
+Plug 'preservim/nerdcommenter' " For commenting
 Plug 'mhinz/vim-startify' " Startify
 Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
 Plug 'ryanoasis/vim-devicons' " vim dev icons
-Plug 'gruvbox-community/gruvbox'
+Plug 'gruvbox-community/gruvbox' " color scheme
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -50,4 +51,5 @@ nmap <leader>2 :bn<CR>
 nnoremap <leader><r> :sp <CR> :term python % <CR>
 nnoremap <leader><w> :bd! <CR>
 
+" Color scheme
 colorscheme gruvbox
