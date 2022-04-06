@@ -16,6 +16,7 @@ set nohlsearch
 set ignorecase
 set smartcase
 set termguicolors
+set clipboard=unnamed
 
 let g:python3_host_prog = '/home/vishal/anaconda3/bin/python'
 
