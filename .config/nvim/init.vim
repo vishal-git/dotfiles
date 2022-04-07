@@ -33,6 +33,7 @@ Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
 Plug 'ryanoasis/vim-devicons' " vim dev icons
 Plug 'gruvbox-community/gruvbox' " color scheme
 Plug 'tpope/vim-fugitive' " git fugitive
+Plug 'dense-analysis/ale' " python code formatter/fixer
 
 call plug#end()
 
@@ -55,3 +56,7 @@ nnoremap <leader><w> :bd! <CR>
 
 " Color scheme
 colorscheme gruvbox
+
+" Python code fixer
+let g:ale_fixers = {'*': [], 'python': ['black']}
+let g:ale_fix_on_save = 1
