@@ -58,5 +58,5 @@ nnoremap <leader><w> :bd! <CR>
 colorscheme gruvbox
 
 " Python code fixer
-let g:ale_fixers = {'*': [], 'python': ['black']}
+let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'], 'python': ['black']}
 let g:ale_fix_on_save = 1
