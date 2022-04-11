@@ -126,14 +126,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# automate ssh-agent startup -- MOVED TO ~/.profile
-#if [ -z "$SSH_AUTH_SOCK" ]; then
-	#eval `ssh-agent -s`
-	#ssh-add ~/.ssh/id_rsa_git
-	#ssh-add ~/.ssh/id_rsa_sncr
-	#ssh-add ~/.ssh/id_rsa_vz
-#fi
-
 nbconv() {
 	if [ "$#" -eq 2 ]; then
 		jupyter nbconvert "$1" --to slides --post serve --SlidesExporter.reveal_scroll="$2"
