@@ -9,7 +9,7 @@ alias gs='git status'
 # misc
 alias mv='mv -i'
 alias ..='cd ..'
-alias ...='cd ...'
+alias ...='cd ../..'
 cdd() { cd "$@" && ls; }
 
 # windows home
