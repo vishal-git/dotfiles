@@ -1,0 +1,5 @@
+[user]
+	email = vishal@derive.io
+	name = Vishal Patel
+[core]
+  excludesfile = ~/.gitignore
