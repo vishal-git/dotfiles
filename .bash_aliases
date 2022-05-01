@@ -34,3 +34,10 @@ alias vi='nvim'
 
 # tmux
 alias tls='tmux ls'
+
+# python
+alias python=python3
+alias pip=pip3
+
+# exa
+alias ell='exa --long --all --sort=mod --reverse --icons'
