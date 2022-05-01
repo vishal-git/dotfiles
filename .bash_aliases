@@ -41,3 +41,4 @@ alias pip=pip3
 
 # exa
 alias ell='exa --long --all --sort=mod --reverse --icons'
+alias el='exa --long --sort=mod --reverse --icons'
