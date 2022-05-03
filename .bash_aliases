@@ -1,7 +1,11 @@
 # ls
-alias ll='ls -alF'
+#alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
+#alias l='ls -CF'
+
+# exa
+alias ll='exa --long --all --sort=mod --reverse --icons'
+alias l='exa --long --sort=mod --reverse --icons'
 
 # git
 alias gs='git status'
@@ -38,7 +42,3 @@ alias tls='tmux ls'
 # python
 alias python=python3
 alias pip=pip3
-
-# exa
-alias el='exa --long --all --sort=mod --reverse --icons'
-alias e='exa --long --sort=mod --reverse --icons'
