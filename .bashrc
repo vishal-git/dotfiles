@@ -137,4 +137,3 @@ nbconv() {
 
 # exa
 export EXA_COLORS="da=1;35"
-
