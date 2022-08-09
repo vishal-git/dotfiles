@@ -17,6 +17,8 @@ set ignorecase
 set smartcase
 set termguicolors
 set clipboard=unnamed
+set colorcolumn=88
+set colorcolumn=+1
 
 let g:python3_host_prog = '/home/vishal/anaconda3/bin/python'
 
@@ -24,7 +26,7 @@ call plug#begin()
 
 Plug 'vim-airline/vim-airline' " Status bar
 Plug 'preservim/nerdtree' " NerdTree
-Plug 'Xuyuanp/nerdtree-git-plugin' " NerdTree Git 
+Plug 'Xuyuanp/nerdtree-git-plugin' " NerdTree Git
 Plug 'tpope/vim-surround' " Surrounding ysw)
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets etc in pair
 Plug 'preservim/nerdcommenter' " For commenting
