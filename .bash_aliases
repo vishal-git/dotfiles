@@ -6,6 +6,7 @@ alias la='ls -A'
 # exa
 alias ll='exa --long --all --sort=mod --reverse --icons'
 alias l='exa --long --sort=mod --reverse --icons'
+alias lt='exa --tree --icons'
 
 # git
 alias gs='git status'
