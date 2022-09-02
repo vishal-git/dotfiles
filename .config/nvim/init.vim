@@ -20,7 +20,7 @@ set clipboard=unnamed
 set colorcolumn=88
 set colorcolumn=+1
 
-let g:python3_host_prog = '/home/vishal/anaconda3/bin/python'
+let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 
 call plug#begin()
 
@@ -35,7 +35,8 @@ Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
 Plug 'ryanoasis/vim-devicons' " vim dev icons
 Plug 'gruvbox-community/gruvbox' " color scheme
 Plug 'tpope/vim-fugitive' " git fugitive
-Plug 'dense-analysis/ale' " python code formatter/fixer
+"Plug 'dense-analysis/ale' " python code formatter/fixer
+Plug 'averms/black-nvim', {'do': ':UpdateRemotePlugins'}
 
 call plug#end()
 
@@ -60,5 +61,5 @@ nnoremap <leader><w> :bd! <CR>
 colorscheme gruvbox
 
 " Python code fixer
-let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'], 'python': ['black']}
-let g:ale_fix_on_save = 1
+"let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'], 'python': ['black']}
+"let g:ale_fix_on_save = 1
