@@ -111,28 +111,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/vishal/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/vishal/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/vishal/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/vishal/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 nbconv() {
 	if [ "$#" -eq 2 ]; then
 		jupyter nbconvert "$1" --to slides --post serve --SlidesExporter.reveal_scroll="$2"
 	else
 		jupyter nbconvert "$1" --to slides --post serve
 	fi
-	
+
 }
 
 # exa
