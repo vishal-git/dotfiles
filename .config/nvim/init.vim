@@ -19,6 +19,8 @@ set termguicolors
 set clipboard=unnamed
 set colorcolumn=88
 set colorcolumn=+1
+set splitright " change the direction of new splits
+set splitbelow " change the direction of new vsplits
 
 let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 
