@@ -22,13 +22,13 @@ set colorcolumn=+1
 set splitright " change the direction of new splits
 set splitbelow " change the direction of new vsplits
 
-let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
+"let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 
 call plug#begin()
 
 Plug 'vim-airline/vim-airline' " Status bar
 Plug 'preservim/nerdtree' " NerdTree
-Plug 'Xuyuanp/nerdtree-git-plugin' " NerdTree Git
+"Plug 'Xuyuanp/nerdtree-git-plugin' " NerdTree Git
 Plug 'tpope/vim-surround' " Surrounding ysw)
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets etc in pair
 Plug 'preservim/nerdcommenter' " For commenting
@@ -37,8 +37,6 @@ Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
 Plug 'ryanoasis/vim-devicons' " vim dev icons
 Plug 'gruvbox-community/gruvbox' " color scheme
 Plug 'tpope/vim-fugitive' " git fugitive
-"Plug 'dense-analysis/ale' " python code formatter/fixer
-Plug 'averms/black-nvim', {'do': ':UpdateRemotePlugins'}
 
 call plug#end()
 
@@ -61,7 +59,3 @@ nnoremap <leader><w> :bd! <CR>
 
 " Color scheme
 colorscheme gruvbox
-
-" Python code fixer
-"let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'], 'python': ['black']}
-"let g:ale_fix_on_save = 1
