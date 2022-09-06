@@ -22,7 +22,7 @@ set colorcolumn=+1
 set splitright " change the direction of new splits
 set splitbelow " change the direction of new vsplits
 
-"let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
+let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 
 call plug#begin()
 
@@ -37,6 +37,7 @@ Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
 Plug 'ryanoasis/vim-devicons' " vim dev icons
 Plug 'gruvbox-community/gruvbox' " color scheme
 Plug 'tpope/vim-fugitive' " git fugitive
+Plug 'python/black' " python autoformatter
 
 call plug#end()
 
@@ -56,6 +57,8 @@ nmap <leader>2 :bn<CR>
 " Python
 nnoremap <leader><r> :sp <CR> :term python % <CR>
 nnoremap <leader><w> :bd! <CR>
+" Autoformat on save
+autocmd BufWritePre *.py execute ':Black'
 
 " Color scheme
 colorscheme gruvbox
