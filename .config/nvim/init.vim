@@ -46,6 +46,7 @@ nnoremap <leader>f :NERDTreeFocus<CR>
 nnoremap <leader>F :NERDTreeToggle<CR>
 let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeMinimalUI=1
+let g:NERDTreeQuitOnOpen=1
 
 " NERDCommenter
 nnoremap <C-_> <Plug>NERDCommenterToggle
