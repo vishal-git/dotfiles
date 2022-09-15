@@ -122,3 +122,6 @@ nbconv() {
 
 # exa
 export EXA_COLORS="da=1;35"
+
+# require active venv for pip install
+export PIP_REQUIRE_VIRTUALENV=true
