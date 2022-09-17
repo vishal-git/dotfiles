@@ -16,6 +16,7 @@ alias mv='mv -i'
 alias ..='cd ..'
 alias ...='cd ../..'
 cdd() { cd "$@" && ls; }
+mkd() { mkdir "$@" && cd $_; }
 
 # windows home
 export wr=~/../../mnt/c/Users/visha
