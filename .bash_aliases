@@ -43,3 +43,4 @@ alias tls='tmux ls'
 # python
 alias python=python3
 alias pip=pip3
+penv() { python -m venv .venv --prompt "$@" && . .venv/bin/activate; }
