@@ -40,6 +40,9 @@ alias vi='nvim'
 
 # tmux
 alias tls='tmux ls'
+alias tn='tmux new -t'
+alias ta='tmux att -t'
+alias tk='tmux kill -t'
 
 # python
 alias python=python3
