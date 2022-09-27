@@ -1,26 +1,25 @@
-: set number
-: set relativenumber
-: set autoindent
-: set tabstop=4
-: set shiftwidth=4
-: set smarttab
-: set softtabstop=4
-: set mouse=a
-: set scrolloff=5
-: set backspace=indent,eol,start
-: set encoding=utf-8
-: syntax enable
-
+set number
+set relativenumber
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set smartcase
+set softtabstop=4
+set mouse=a
+set scrolloff=5
+set backspace=indent,eol,start
+set encoding=utf-8
 set incsearch
 set nohlsearch
 set ignorecase
-set smartcase
 set termguicolors
 set clipboard=unnamed
 set colorcolumn=88
 set colorcolumn=+1
 set splitright " change the direction of new splits
 set splitbelow " change the direction of new vsplits
+syntax enable
 
 let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 
@@ -28,7 +27,6 @@ call plug#begin()
 
 Plug 'vim-airline/vim-airline' " Status bar
 Plug 'preservim/nerdtree' " NerdTree
-"Plug 'Xuyuanp/nerdtree-git-plugin' " NerdTree Git
 Plug 'tpope/vim-surround' " Surrounding ysw)
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets etc in pair
 Plug 'preservim/nerdcommenter' " For commenting
