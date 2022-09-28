@@ -33,9 +33,10 @@ Plug 'preservim/nerdcommenter' " For commenting
 Plug 'mhinz/vim-startify' " Startify
 Plug 'Vimjas/vim-python-pep8-indent' " Python indentation
 Plug 'ryanoasis/vim-devicons' " vim dev icons
-Plug 'gruvbox-community/gruvbox' " color scheme
+"Plug 'gruvbox-community/gruvbox' " color scheme
 Plug 'tpope/vim-fugitive' " git fugitive
 Plug 'python/black' " python autoformatter
+Plug 'bluz71/vim-nightfly-guicolors'
 
 call plug#end()
 
@@ -60,4 +61,5 @@ nnoremap <leader><w> :bd! <CR>
 autocmd BufWritePre *.py execute ':Black'
 
 " Color scheme
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme nightfly
