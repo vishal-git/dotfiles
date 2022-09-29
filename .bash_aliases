@@ -51,3 +51,4 @@ alias pip=pip3
 penv() { python -m venv .venv --prompt "$@" && . .venv/bin/activate; }
 alias pact='. .venv/bin/activate'
 alias pdeact='deactivate'
+alias pbase='. ~/venv/base/bin/activate' # base python env
