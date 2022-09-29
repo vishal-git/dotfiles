@@ -37,7 +37,7 @@ alias jupmono='jt -t monokai -f fira -fs 10 -nf ptsans -nfs 11 -N -kl -cursw 2 -
 
 # vim
 #alias vi='nvim'
-alias vi='./nvim.appimage'
+alias vi='~/nvim.appimage'
 
 # tmux
 alias tls='tmux ls'
