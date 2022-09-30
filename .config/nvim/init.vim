@@ -37,6 +37,7 @@ Plug 'ryanoasis/vim-devicons' " vim dev icons
 Plug 'tpope/vim-fugitive' " git fugitive
 Plug 'python/black' " python autoformatter
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
