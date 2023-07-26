@@ -125,3 +125,7 @@ export EXA_COLORS="da=1;35"
 
 # require active venv for pip install
 export PIP_REQUIRE_VIRTUALENV=true
+
+tnew() {
+	tmux new-session -t "$1" \; send-keys 'pact' C-m \; split-window -h \; send-keys 'pact' C-m \; split-window -v \; send-keys 'pact' C-m \;
+}
