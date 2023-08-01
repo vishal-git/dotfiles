@@ -126,6 +126,9 @@ export EXA_COLORS="da=1;35"
 # require active venv for pip install
 export PIP_REQUIRE_VIRTUALENV=true
 
+# create a new tmux session with three panes
+# assumes a venv file in the folder from where this command is executed
+# runs `pact` alias to activate Python virtual environment in each pane
 tnew() {
 	tmux new-session -t "$1" \; send-keys 'pact' C-m \; split-window -h \; send-keys 'pact' C-m \; split-window -v \; send-keys 'pact' C-m \;
 }
