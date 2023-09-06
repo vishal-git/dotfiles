@@ -38,6 +38,7 @@ Plug 'tpope/vim-fugitive' " git fugitive
 Plug 'python/black' " python autoformatter
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' } " catppuccin color scheme
 
 call plug#end()
 
@@ -63,9 +64,11 @@ autocmd BufWritePre *.py execute ':Black'
 
 " Color scheme
 " colorscheme gruvbox
-colorscheme nightfly
+" colorscheme nightfly
+colorscheme catppuccin-mocha
 
-" use <tab> for trigger completion and navigate to the next complete item
+"
+"" use <tab> for trigger completion and navigate to the next complete item
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
