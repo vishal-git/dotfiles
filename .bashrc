@@ -132,3 +132,6 @@ export PIP_REQUIRE_VIRTUALENV=true
 tnew() {
 	tmux new-session -t "$1" \; send-keys 'pact' C-m \; split-window -h \; send-keys 'pact' C-m \; split-window -v \; send-keys 'pact' C-m \;
 }
+
+# for when launching interative app from WSL using Streamlit etc.
+export BROWSER="/mnt/c/Users/visha/AppData/Local/Vivaldi/Application/vivaldi.exe"
