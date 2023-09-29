@@ -46,7 +46,7 @@ alias ta='tmux att -t'
 alias tk='tmux kill -t'
 
 # python
-alias python=python3
+alias python=python3.9
 alias pip=pip3
 penv() { python -m venv .venv --prompt "$@" && . .venv/bin/activate; }
 alias pact='. .venv/bin/activate'
