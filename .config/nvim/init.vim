@@ -21,7 +21,7 @@ set splitright " change the direction of new splits
 set splitbelow " change the direction of new vsplits
 syntax enable
 
-let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
+let g:python3_host_prog = $HOME . '~/venv/nvim/bin/python'
 
 call plug#begin()
 
