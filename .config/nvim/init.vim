@@ -21,7 +21,7 @@ set splitright " change the direction of new splits
 set splitbelow " change the direction of new vsplits
 syntax enable
 
-let g:python3_host_prog = $HOME . '~/venv/nvim/bin/python'
+let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 
 call plug#begin()
 
@@ -38,7 +38,7 @@ Plug 'tpope/vim-fugitive' " git fugitive
 Plug 'python/black' " python autoformatter
 Plug 'bluz71/vim-nightfly-guicolors'
 "Plug 'catppuccin/nvim', { 'as': 'catppuccin' } " catppuccin color scheme
-
+Plug 'github/copilot.vim' " github copilot
 call plug#end()
 
 " NERDTree
@@ -59,7 +59,7 @@ nmap <leader>2 :bn<CR>
 nnoremap <leader><r> :sp <CR> :term python % <CR>
 nnoremap <leader><w> :bd! <CR>
 " Autoformat on save
-autocmd BufWritePre *.py execute ':Black'
+autocmd BufWritePre *.py Black
 
 " Color scheme
 colorscheme gruvbox
