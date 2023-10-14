@@ -36,8 +36,7 @@ alias jupc='jupyter nbconvert --to slides --SlidesExporter.reveal_scroll=True'
 alias jupmono='jt -t monokai -f fira -fs 10 -nf ptsans -nfs 11 -N -kl -cursw 2 -cursc r -cellw 95% -T'
 
 # vim
-#alias vi='nvim'
-alias vi='~/nvim.appimage'
+alias vi='nvim'
 
 # tmux
 alias tls='tmux ls'
@@ -46,7 +45,7 @@ alias ta='tmux att -t'
 alias tk='tmux kill -t'
 
 # python
-alias python=python3.9
+alias python=python3
 alias pip=pip3
 penv() { python -m venv .venv --prompt "$@" && . .venv/bin/activate; }
 alias pact='. .venv/bin/activate'
