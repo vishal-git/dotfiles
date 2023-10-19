@@ -38,6 +38,7 @@ Plug 'tpope/vim-fugitive' " git fugitive
 Plug 'python/black' " python autoformatter
 Plug 'bluz71/vim-nightfly-guicolors'
 "Plug 'catppuccin/nvim', { 'as': 'catppuccin' } " catppuccin color scheme
+"requires a higher version of nvim that I couldn't get to install
 Plug 'github/copilot.vim' " github copilot
 call plug#end()
 
@@ -63,20 +64,8 @@ autocmd BufWritePre *.py Black
 
 " Color scheme
 colorscheme gruvbox
-" colorscheme nightfly
+"colorscheme nightfly
 "colorscheme catppuccin-mocha
-
-"
-"" use <tab> for trigger completion and navigate to the next complete item
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-inoremap <silent><expr> <Tab>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
 
 " use Ctrl+j and Cntrl+k to move lines up or down
 nnoremap <c-j> :m .+1<CR>==
