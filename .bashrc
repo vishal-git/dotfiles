@@ -135,3 +135,8 @@ tnew() {
 
 # for when launching interative app from WSL using Streamlit etc.
 export BROWSER="/mnt/c/Users/visha/AppData/Local/Vivaldi/Application/vivaldi.exe"
+
+# oh-my-posh
+#eval "$(oh-my-posh init bash)"
+eval "$(oh-my-posh init bash --config ~/catppuccin_mocha.omp.json)"
+export VIRTUAL_ENV_DISABLE_PROMPT=1
