@@ -13,3 +13,5 @@ Here's the list of all dotfiles:
 * `.config/nvim/init.vim` (my neovim configs)
 * `catpuccin-mocha.omp.json` (customized prompt settings for Oh My Posh)
 * `settings.json` (Terminal settings)
+
+I follow the instructions in the link below to create a bare git repository and use it to store and update all my dotfiles. This makes setting up a new machine a breeze! https://www.atlassian.com/git/tutorials/dotfiles
