@@ -6,6 +6,7 @@ Here's the list of all dotfiles:
 
 * `.bashrc`
 * `.bash_aliases`
+* `.profile`
 * `.gitconfig`
 * `.gitignore`
 * `.tmux.conf`
