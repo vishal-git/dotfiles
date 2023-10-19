@@ -1,7 +1,5 @@
 # ls
-#alias ll='ls -alF'
 alias la='ls -A'
-#alias l='ls -CF'
 
 # exa
 alias ll='exa --long --all --sort=mod --reverse --icons'

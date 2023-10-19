@@ -36,7 +36,6 @@ Plug 'ryanoasis/vim-devicons' " vim dev icons
 Plug 'gruvbox-community/gruvbox' " color scheme
 Plug 'tpope/vim-fugitive' " git fugitive
 Plug 'python/black' " python autoformatter
-Plug 'bluz71/vim-nightfly-guicolors'
 "Plug 'catppuccin/nvim', { 'as': 'catppuccin' } " catppuccin color scheme
 "requires a higher version of nvim that I couldn't get to install
 Plug 'github/copilot.vim' " github copilot
@@ -64,8 +63,6 @@ autocmd BufWritePre *.py Black
 
 " Color scheme
 colorscheme gruvbox
-"colorscheme nightfly
-"colorscheme catppuccin-mocha
 
 " use Ctrl+j and Cntrl+k to move lines up or down
 nnoremap <c-j> :m .+1<CR>==
