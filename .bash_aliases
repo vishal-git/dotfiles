@@ -26,7 +26,7 @@ alias cdcl='cd "$cl"'
 alias ex='explorer.exe'
 
 # git command mapping for dotfiles repo
-alias config='/usr/bin/git --git-dir=/home/vishal/.cfg/ --work-tree=/home/vishal'
+alias config='/usr/bin/git --git-dir=/home/vishal/dotfiles/ --work-tree=/home/vishal'
 
 # jupyter notebook
 alias jup='jupyter notebook --no-browser'
