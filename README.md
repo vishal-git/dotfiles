@@ -11,6 +11,7 @@ Here's the list of all dotfiles:
 	- I use `tmux` customized three-pane set-up. See line 132.
 	- I use **Vivaldi** brower, which is set on line 137. 
 	- I use **catpuccin-mocha** prompt theme on **oh-my-posh** prompt. It's enables on line 140.
+	- I have created a bash script called `ginit` to initialize a local repo and push to the remote repo.
 * `.bash_aliases`
 	- Notes:
 	- All my "ls" aliases are set to `exa`. See lines 7-9.
