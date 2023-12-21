@@ -128,3 +128,15 @@ export BROWSER="/mnt/c/Users/visha/AppData/Local/Vivaldi/Application/vivaldi.exe
 
 # oh-my-posh
 eval "$(oh-my-posh init bash --config ~/catppuccin_mocha.omp.json)"
+
+# create a git repo and push to github
+# the remote repo must have the same name as the directory from which this script is run
+ginit () { 
+	echo ${PWD##*/} >> README.md
+	git init
+	git add README.md
+	git commit -m "added README"
+	git branch -M main
+	git remote add origin git@github.com:vishal-git/"${PWD##*/}".git
+	git push -u origin main
+}
