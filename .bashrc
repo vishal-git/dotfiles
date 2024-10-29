@@ -140,3 +140,10 @@ ginit () {
 	git remote add origin git@github.com:vishal-git/"${PWD##*/}".git
 	git push -u origin main
 }
+. "$HOME/.cargo/env"
+
+# pyenv settings
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

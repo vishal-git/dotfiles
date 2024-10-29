@@ -27,3 +27,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 PATH="/home/vishal/.local/bin:$PATH"
+. "$HOME/.cargo/env"
