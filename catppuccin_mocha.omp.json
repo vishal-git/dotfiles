@@ -1,62 +1,71 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-        "os": "#ACB0BE",
-        "closer": "p:os",
-        "pink": "#F5C2E7",
-        "lavender": "#B4BEFE",
-        "blue":  "#89B4FA"
+    "blue": "#89B4FA",
+    "closer": "p:os",
+    "lavender": "#B4BEFE",
+    "os": "#ACB0BE",
+    "pink": "#F5C2E7"
   },
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "type": "os",
-          "template": "{{.Icon}} ",
-		  "properties": {
-            "style": "plain",
+          "properties": {
+            "cache_duration": "none",
             "foreground": "p:os",
-			"shell": "echo $VIRTUAL_ENV",
-			"shell_condition": "!= ''"
-        }
-		},
-		{
-		  "type": "python",
-	      "template": " ",
-		  "foreground": "#91b386",
-		  "properties": {
-			"display_version": false,
-			"fetch_version": false
-          }
-		},
-        {
-          "foreground": "p:blue",
-          "style": "plain",
-          "template": "{{ .UserName }}@{{ .HostName }} ",
-          "type": "session"
+            "shell": "echo $VIRTUAL_ENV",
+            "shell_condition": "!= ''",
+            "style": "plain"
+          },
+          "template": "{{.Icon}} ",
+          "type": "os"
         },
         {
-          "foreground": "p:pink",
           "properties": {
+            "cache_duration": "none",
+            "display_version": false,
+            "fetch_version": false
+          },
+          "template": "\ue235 ",
+          "foreground": "#91b386",
+          "type": "python"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "{{ .UserName }}@{{ .HostName }} ",
+          "foreground": "p:blue",
+          "type": "session",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
             "folder_icon": "..\ue5fe..",
             "home_icon": "~",
             "style": "agnoster_full"
           },
-          "style": "plain",
           "template": "{{ .Path }} ",
-          "type": "path"
+          "foreground": "p:pink",
+          "type": "path",
+          "style": "plain"
         },
         {
-          "style": "plain",
-          "foreground": "p:closer",
+          "properties": {
+            "cache_duration": "none"
+          },
           "template": "\uf105",
-          "type": "text"
+          "foreground": "p:closer",
+          "type": "text",
+          "style": "plain"
         }
-      ],
-      "type": "prompt"
+      ]
     }
   ],
-  "final_space": true,
-  "version": 2
+  "version": 3,
+  "final_space": true
 }

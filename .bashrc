@@ -111,7 +111,7 @@ nbconv() {
 }
 
 # exa
-export EXA_COLORS="da=35;1:di=36;1:*.txt=33" # change the dir color to cyan and timestamp to purple and text file to yellow
+export EXA_COLORS="da=34;1:di=36;1:*.txt=33" # change the dir color to cyan and timestamp to purple and text file to yellow
 
 # require active venv for pip install
 export PIP_REQUIRE_VIRTUALENV=true
