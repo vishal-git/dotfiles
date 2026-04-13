@@ -148,3 +148,5 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 export PATH=$HOME/.npm-global/bin:$PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
