@@ -123,6 +123,10 @@ tnew() {
 	tmux new-session -t "$1" \; send-keys 'pact' C-m \; split-window -h \; send-keys 'pact' C-m \; split-window -v \; send-keys 'pact' C-m \;
 }
 
+cmux() {
+	tmux new-session ${1:+-s "$1"} \; split-window -h -l 60% \; send-keys 'claude' C-m \;
+}
+
 # for when launching interative app from WSL using Streamlit etc.
 export BROWSER="/mnt/c/Users/visha/AppData/Local/Vivaldi/Application/vivaldi.exe"
 
