@@ -124,7 +124,7 @@ tnew() {
 }
 
 cmux() {
-	tmux new-session ${1:+-s "$1"} \; split-window -h -l 60% \; send-keys 'claude' C-m \;
+	tmux new-session ${1:+-s "$1"} \; split-window -h -l 70% \; send-keys 'claude' C-m \;
 }
 
 # for when launching interative app from WSL using Streamlit etc.
