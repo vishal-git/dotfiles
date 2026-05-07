@@ -17,6 +17,17 @@
           }
         ]
       }
-    ]
+    ],
+	"Stop": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "powershell.exe -c \"(New-Object Media.SoundPlayer 'C:\\\\Windows\\\\Media\\\\tada.wav').PlaySync()\""
+        }
+      ]
+    }
+  ]
   }
 }
