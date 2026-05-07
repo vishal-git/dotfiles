@@ -1,0 +1,3 @@
+- Always use uv to run Python commands.
+- Keep in mind that I run code on WSL Ubuntu.
+- Verify before reporting done. When you add or change behavior — a new endpoint, config option, UI control, scheduled job — exercise the new path end-to-end before saying it works. "Code compiles" / "imports succeed" / "tests pass" don't prove the behavior, only that the shape is right. For services with a backing store, hit the real (or throwaway-docker) DB with realistic data shapes.
