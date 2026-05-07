@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "theme": "dark",
+  "remoteControlAtStartup": true,
+  "skipAutoPermissionPrompt": true,
+  "agentPushNotifEnabled": true,
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f pyproject.toml ] && command -v uv &> /dev/null && [ -f uv.lock ]; then uv lock --check 2>&1 | head -20; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
