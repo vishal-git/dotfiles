@@ -1,7 +1,9 @@
 ---
+name: joke
 description: Random joke or philosophical thought based on recent chat
 model: claude-haiku-4-5-20251001
 allowed-tools: [Bash]
+disable-model-invocation: true
 ---
 
 Pick a random topic:

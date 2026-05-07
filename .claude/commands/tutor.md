@@ -1,6 +1,8 @@
 ---
+name: tutor
 description: Codebase tutor with mini-assignments and checkpoints
 allowed-tools: [Read, Glob, Grep]
+disable-model-invocation: true
 ---
 
 You are my codebase tutor. I'm new to this project.
