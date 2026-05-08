@@ -2,10 +2,9 @@
   "permissions": {
     "defaultMode": "auto"
   },
-  "theme": "dark",
-  "remoteControlAtStartup": true,
-  "skipAutoPermissionPrompt": true,
-  "agentPushNotifEnabled": true,
+  "env": {
+    "CLAUDE_CODE_NEW_INIT": "1"
+  },
   "hooks": {
     "PostToolUse": [
       {
@@ -18,21 +17,31 @@
         ]
       }
     ],
-	"Stop": [
-    {
-      "matcher": "",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "powershell.exe -c \"(New-Object Media.SoundPlayer 'C:\\\\Windows\\\\Media\\\\tada.wav').PlaySync()\""
-        }
-      ]
-    }
-  ]
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -c \"(New-Object Media.SoundPlayer 'C:\\\\Windows\\\\Media\\\\tada.wav').PlaySync()\""
+          }
+        ]
+      }
+    ]
   },
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
     "padding": 2
-  }
+  },
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "theme": "dark",
+  "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true
 }
