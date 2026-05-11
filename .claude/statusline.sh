@@ -4,21 +4,14 @@ input=$(cat)
 MODEL=$(echo "$input" | jq -r '.model.display_name')
 DIR=$(echo "$input" | jq -r '.workspace.current_dir')
 
-TOKENS_USED=$(echo "$input" | jq -r '.context_window.used_tokens // .context.input_tokens // 0')
-TOKENS_TOTAL=$(echo "$input" | jq -r '.context_window.total_tokens // .context.context_window // 200000')
-
-# integer math, multiply before dividing
-if [ "$TOKENS_TOTAL" -gt 0 ]; then
-  PCT=$((TOKENS_USED * 100 / TOKENS_TOTAL))
-else
-  PCT=0
-fi
+# Claude Code computes context-window usage and passes it in directly.
+PCT=$(echo "$input" | jq -r '.context_window.used_percentage // 0')
+[ "$PCT" -gt 100 ] && PCT=100
 
 DURATION_MS=$(echo "$input" | jq -r '.cost.total_duration_ms // 0')
 
 CYAN='\033[36m'; GREEN='\033[32m'; YELLOW='\033[33m'; RED='\033[31m'; RESET='\033[0m'
 
-# Pick bar color based on context usage
 if [ "$PCT" -ge 90 ]; then BAR_COLOR="$RED"
 elif [ "$PCT" -ge 70 ]; then BAR_COLOR="$YELLOW"
 else BAR_COLOR="$GREEN"; fi
