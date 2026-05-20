@@ -123,8 +123,24 @@ tnew() {
 	tmux new-session -t "$1" \; send-keys 'pact' C-m \; split-window -h \; send-keys 'pact' C-m \; split-window -v \; send-keys 'pact' C-m \;
 }
 
+#cmux() {
+#	tmux new-session ${1:+-s "$1"} \; split-window -h -l 65% \; send-keys 'claude' C-m \;
+#}
+
 cmux() {
-	tmux new-session ${1:+-s "$1"} \; split-window -h -l 65% \; send-keys 'claude' C-m \;
+    local session_name="${1:-$(basename "$PWD" | tr -c '[:alnum:]_-' '_')}"
+
+    if tmux has-session -t="$session_name" 2>/dev/null; then
+        if [ -n "$TMUX" ]; then
+            tmux switch-client -t "$session_name"
+        else
+            tmux attach-session -t "$session_name"
+        fi
+    else
+        tmux new-session -s "$session_name" \; \
+            split-window -h -l 65% \; \
+            send-keys 'claude' C-m \;
+    fi
 }
 
 # for when launching interative app from WSL using Streamlit etc.
