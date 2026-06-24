@@ -1,9 +1,9 @@
 {
-  "permissions": {
-    "defaultMode": "auto"
-  },
   "env": {
     "CLAUDE_CODE_NEW_INIT": "1"
+  },
+  "permissions": {
+    "defaultMode": "auto"
   },
   "hooks": {
     "PostToolUse": [

@@ -170,3 +170,5 @@ eval "$(pyenv virtualenv-init -)"
 export PATH=$HOME/.npm-global/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+export GITHUB_PERSONAL_ACCESS_TOKEN="$(gh auth token 2>/dev/null)"
